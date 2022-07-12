@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import style from "./App.module.css";
 
 import "./globals.css";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
       <Header />
 
       <div className={style.wrapper}>
-        <aside>sidebar</aside>
+        <Sidebar />
         <main>main</main>
       </div>
     </div>
